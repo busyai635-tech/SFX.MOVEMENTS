@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IGNITE SFX | Premium Live Event Special Effects</title>
+    <title>SFX.MOVEMENT| Premium Live Event Special Effects</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
@@ -458,20 +458,18 @@
            ==================== */
         .about-section {
             background: #000;
-            /* No extra padding/margin here, let container handle it */
         }
 
-        /* New Inner Container Layout */
         .about-container {
             display: flex;
-            align-items: center; /* Vertically center image and text */
+            align-items: center; 
             gap: 4rem;
             padding: 5rem 0;
         }
 
         .about-visual {
-            flex: 1; /* Takes 50% width of container */
-            height: 400px; /* Fixed height for consistency */
+            flex: 1; 
+            height: 400px;
             position: relative;
             border-radius: 15px;
             overflow: hidden;
@@ -479,24 +477,22 @@
             transition: var(--transition);
         }
 
+        /* Video / Image Styling */
+        .about-visual video.about-media, 
         .about-visual img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures image fills box without stretching */
-            transition: var(--transition);
+            object-fit: cover;
+            border-radius: 15px;
         }
 
         .about-visual:hover {
             border-color: var(--accent-blue);
             box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
         }
-        
-        .about-visual:hover img {
-            transform: scale(1.05);
-        }
 
         .about-content {
-            flex: 1; /* Takes 50% width */
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -720,11 +716,11 @@
 
     <!-- NAV BAR -->
     <nav class="navbar" id="navbar">
-        <a href="#" class="logo">IGNITE <span>SFX</span></a>
+        <a href="#" class="logo">SFX. <span>MOVEMENT</span></a>
         
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
-            <li><a href="ignightabout.html">About Us</a></li>
+            <li><a href="#About">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="mobile-only"><a href="#contact"><button class="cta-btn">Enquire</button></a></li>
@@ -742,14 +738,17 @@
     <!-- HERO SECTION -->
     <section class="hero" id="home">
         <div class="hero-slider">
-            <!-- 1. LIVE CONCERT CROWD & FIREWORKS -->
-            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
-            <!-- 2. REAL WEDDING MOMENT -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
-            <!-- 3. FESTIVAL DJ STAGE -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
-            <!-- 4. CELEBRATION -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <!-- 1. LIVE FIREWORKS OVER CITY/CROWD -->
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?auto=format&fit=crop&w=1920&q=80');"></div>
+            
+            <!-- 2. WEDDING COUPLE WITH SPARKLERS/FIREWORKS -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            
+            <!-- 3. LIVE CONCERT PYROTECHNICS & LIGHTS -->
+            <div class="slide" style="background-image: url('Assets/liveconsert2');"></div>
+            
+            <!-- 4. STAGE FLAME & CO2 EFFECTS -->
+            <div class="slide" style="background-image: url('Assets/sparks');"></div>
         </div>
         
         <div class="hero-overlay"></div>
@@ -764,7 +763,7 @@
 
             <!-- SOCIAL ICONS -->
             <div class="hero-socials">
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/sfx.moment?igsh=cXRkeDRtMXlvcWw5" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
@@ -780,23 +779,23 @@
             
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1623949909241-d5f99277f90f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Special Entry">
+                    <img src="Assets/specialEntry.jpg" alt="Special Entry">
                     <div class="service-info"><h3>SPECIAL ENTRY</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1574391884720-3850b597d62e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="CO2 Fx">
+                    <img src="/Assets/CO2SFX.jpg" alt="CO2 Fx">
                     <div class="service-info"><h3>CO₂ FX</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1549346123-289e6022e038?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sparkler Effects">
+                    <img src="Assets/ColdSmoke.jpg" alt="Sparkler Effects">
                     <div class="service-info"><h3>COLD SPARKS</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1514525253440-b393452e3383?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Confetti Fx">
+                    <img src="Assets/confetti" alt="Confetti Fx">
                     <div class="service-info"><h3>CONFETTI FX</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1542665952-14513db15293?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Snow Fx">
+                    <img src="Assets/SNOWFX" alt="Snow Fx">
                     <div class="service-info"><h3>SNOW FX</h3></div>
                 </div>
                 <div class="service-card">
@@ -804,19 +803,19 @@
                     <div class="service-info"><h3>FLAME FX</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1500917293049-6179707aa372?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bubble Fx">
+                    <img src="Assets/bouble fx" alt="Bubble Fx">
                     <div class="service-info"><h3>BUBBLE FX</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Low Fog Fx">
+                    <img src="Assets/logFog" alt="Low Fog Fx">
                     <div class="service-info"><h3>LOW FOG</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Colour Fx">
+                    <img src="Assets/color fx" alt="Colour Fx">
                     <div class="service-info"><h3>COLOUR FX</h3></div>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1532323544230-7191fd510c59?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fire Show">
+                    <img src="Assets/FIreshow.jpg" alt="Fire Show">
                     <div class="service-info"><h3>FIRE SHOW</h3></div>
                 </div>
             </div>
@@ -832,11 +831,11 @@
             
             <div class="solutions-grid">
                 <div class="solution-card">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding">
+                    <img src="Assets/wedding2" alt="Wedding">
                     <div class="solution-text"><h3>WEDDING</h3></div>
                 </div>
                 <div class="solution-card">
-                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Concerts">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Concerts">
                     <div class="solution-text"><h3>CONCERTS</h3></div>
                 </div>
                 <div class="solution-card">
@@ -848,7 +847,7 @@
                     <div class="solution-text"><h3>CLUB</h3></div>
                 </div>
                 <div class="solution-card">
-                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Festivals">
+                    <img src="Assets/Festivals" alt="Festivals">
                     <div class="solution-text"><h3>FESTIVALS</h3></div>
                 </div>
                 <div class="solution-card">
@@ -863,24 +862,27 @@
     <section class="about-section" id="about">
         <div class="container about-container">
             <div class="about-visual">
-                <!-- Image Tag for Perfect Alignment & Object Fit -->
-       <video
-  src="PixVerse_V5.5_Image_Text_360P_Create_a_premium"
-  autoplay
-  muted
-  loop
-  playsinline
-  class="about-media"
-></video>
+                <!-- Video with CSS Class for styling -->
+                <video 
+                    src="Assets/LOGOVCSFX.mp4" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline 
+                    class="about-media">
+                    <!-- Fallback if video fails -->
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="about-content">
                 <h2>ABOUT US</h2>
                 <p>
-                    <strong>IGNITE SFX</strong> is a premier event special effects company delivering unforgettable experiences through high-impact SFX and fireworks. We specialize in innovative, high-quality effects tailored to our clients’ vision — from corporate events and weddings to concerts, festivals, and films.
+                    <strong>SFX MOVEMENT</strong> is a premier event special effects company delivering unforgettable experiences through high-impact SFX and fireworks. We specialize in innovative, high-quality effects tailored to our clients’ vision.
                     <br><br>
-                    Our philosophy is simple: <strong>Effects should evoke emotion.</strong> With a skilled team of technicians, designers, and engineers, we ensure every spark is timed to perfection and every blast is executed with absolute safety.
+                    Our philosophy is simple: <strong>Effects should evoke emotion.</strong> We ensure every spark is timed to perfection and every blast is executed with absolute safety.
                 </p>
-                <a href="#contact"><button class="secondary-btn" style="border-color: var(--accent-gold); color: var(--accent-gold);">Learn More</button></a>
+                <!-- Linked to the separate page -->
+                <a href="about.html"><button class="secondary-btn" style="border-color: var(--accent-gold); color: var(--accent-gold);">Read Our Full Story</button></a>
             </div>
         </div>
     </section>
@@ -1004,7 +1006,7 @@
         
         <!-- Simple Footer -->
         <footer style="text-align: center; padding: 2rem; background: #000; color: #555; font-size: 0.8rem; border-top: 1px solid #111;">
-            <p>&copy; 2025 IGNITE SFX. All Rights Reserved. Designed for Excellence.</p>
+            <p>&copy; 2025 SFX MOVEMENT. All Rights Reserved. Designed for Excellence.</p>
         </footer>
     </section>
 
